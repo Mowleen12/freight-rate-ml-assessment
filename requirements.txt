@@ -1,0 +1,8 @@
+matplotlib>=3.8,<4
+numpy>=1.26,<3
+pandas>=2.0,<3
+# notebook (solution) dependencies
+scikit-learn>=1.4
+xgboost>=2.0
+jupyter
+nbconvert
