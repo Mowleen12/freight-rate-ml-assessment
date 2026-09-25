@@ -166,20 +166,18 @@ Final pipeline retrained on **all 48,000 labeled rows** before generating submis
 | `december_chart_inputs.csv` | 31 rows · original 7-column structure preserved · dates 2025-12-01→12-31 complete · fixed inputs intact (Lexington → Fort Wayne, 360 mi, Dry Van, 32,000 lb) · predictions $968.7–$1,030.8 |
 | `scorer_results/candidate_december.png` | Created by the unmodified official `score.py` (exit 0); also embedded in the notebook |
 
-The notebook's Section 17 re-reads every written file from disk and prints a **16/16 submission checklist**
-(the same checks the grader runs). The supplied `december-chart-inputs.csv` (hyphenated) is intentionally
+The supplied `december-chart-inputs.csv` (hyphenated) is intentionally
 left blank; the completed file uses the scorer's expected name `december_chart_inputs.csv`.
 
 ---
 
-## Notebook Structure (18 sections)
+## Notebook Structure (16 sections)
 
 1. Assessment Objective · 2. Environment and Imports · 3. Load Data · 4. Dataset Overview ·
 5. Exploratory Data Analysis · 6. Data Quality Analysis · 7. Feature Engineering ·
 8. Validation Strategy · 9. Baseline Model · 10. Model Experiments and Comparison ·
 11. Error/Residual Analysis · 12. Final Model Selection · 13. Final Training on All Labeled Data ·
-14. Generate Validation Predictions · 15. Generate December Predictions · 16. Run Official Scorer ·
-17. Final Output Validation · 18. Conclusions and Limitations
+14. Generate Validation Predictions · 15. Generate December Predictions · 16. Run Official Scorer
 
 Every modeling decision is explained in Markdown immediately before/after the relevant code. The notebook
 is executable top-to-bottom with a fresh kernel (`nbconvert --execute`), uses seed 42 everywhere, creates
